@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(201, 61, 170);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: left; 
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 30px 0 0;
+}
+
+img {
+  height: 300px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer img{
+  height:150px;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 150px 150px;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pic ordinary"
+    "pic super";
+}
+
+.pic { 
+  grid-area: pic; 
+}
+
+.ordinary {
+  grid-area: ordinary;
+  background-color: aqua;
+}
+
+.super { 
+  grid-area: super;
+  background-color: aqua;
+ 
+}
+
+.price{
+  font-size: 30px;
+}
+
